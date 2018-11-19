@@ -1,0 +1,20 @@
+
+body {
+    overflow: auto;
+}
+.currency {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.currency table {
+    width: 100%;
+    text-align: left;
+  }
+
+.currency-a {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+}
+

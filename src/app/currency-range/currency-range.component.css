@@ -1,0 +1,22 @@
+  .vendorListing p{
+    margin-bottom: 0;
+    font-size: 16px;
+    padding: 5px 10px 5px 10px;
+  }
+  
+  .listing-a{
+    padding: 10px;
+  }
+  .listing-a mat-form-field{
+    width: 100%;
+    font-size: 13px;
+  }
+  .listing-a button{
+    outline: none;
+    margin: 0 auto;
+    display: block;
+    background: #f2680c;
+    color: #fff;
+    font-size: 13px;
+  }
+  

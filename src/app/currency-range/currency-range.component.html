@@ -1,0 +1,21 @@
+<div>
+  <div class="vendorListing">
+    <p>
+      Set reminder for your favourite currency 
+    </p>
+  </div>
+  <div class="listing-a" *ngIf="currencyForm">
+    <form [formGroup]="currencyForm">
+      <mat-form-field>
+        <mat-select placeholder="Currency" formControlName="currency">
+          <mat-option [value]="val.id" *ngFor="let val of currencyList">{{val.name}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field><input matInput placeholder="Min Price" formControlName="min"></mat-form-field>
+      <mat-form-field><input matInput placeholder="Max Price" formControlName="max"></mat-form-field>
+
+      <button mat-button (click)="onSubmitForm()">Submit</button>
+    </form>
+  </div>
+</div>

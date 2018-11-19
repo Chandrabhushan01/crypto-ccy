@@ -1,0 +1,23 @@
+.alert_dialog{
+    padding: 10px;
+}
+.alert_dialog h4{
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.alert_dialog p{
+    font-size: 15px;
+    margin: 5px 0 10px 0;
+}
+.alert_dialog section{
+    text-align: right;
+}
+.alert_dialog section button{
+    outline: none;
+    font-size: 12px;
+    min-width: auto;
+    background-color: #f2680c;
+    color: #fff;
+    line-height: 30px;
+}
