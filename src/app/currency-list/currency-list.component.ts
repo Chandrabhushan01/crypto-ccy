@@ -16,12 +16,11 @@ import { MatDialog } from '@angular/material';
 })
 export class CurrencyListComponent implements OnInit {
 
-  displayedColumns: string[] = ['id', 'name', 'symbol', 'price'];
+  displayedColumns: string[] = ['no', 'name', 'symbol', 'price'];
   showCurrencies: string[] = ['BTC', 'XRP', 'ETH', 'XLM', 'LTC'];
 
   currencyList: Currency[];
   currencyList$: Observable<Currency[]>;
-
   alertFor: AlertCurr = new AlertCurr();
 
   constructor(
@@ -44,10 +43,7 @@ export class CurrencyListComponent implements OnInit {
         }
         return this.currencyList;
       }),
-    ); /* .subscribe((res: any) => {
-      console.log(res);
-      this.currency_list = res;
-    }); */
+    );
   }
 
   openInputDialog() {
@@ -58,7 +54,6 @@ export class CurrencyListComponent implements OnInit {
 
     dialogRef.afterClosed().subscribe(result => {
       this.alertFor = dialogRef.componentInstance.alertFor;
-      console.log('The dialog was closed', this.alertFor);
     });
   }
 

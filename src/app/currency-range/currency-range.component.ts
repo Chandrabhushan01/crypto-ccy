@@ -20,7 +20,6 @@ export class CurrencyRangeComponent implements OnInit {
     public dialogRef: MatDialogRef<CurrencyRangeComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any
   ) {
-    console.log(data);
     this.currencyList = data.currencyList;
     this.alertFor = data.alertFor;
   }
