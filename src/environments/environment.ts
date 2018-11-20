@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  currecy_api_url: 'https://api.coinmarketcap.com/v2/ticker/'
+  currecy_api_url: 'https://api.coinmarketcap.com/v2/ticker/?limit=10'
 };
 
 /*
