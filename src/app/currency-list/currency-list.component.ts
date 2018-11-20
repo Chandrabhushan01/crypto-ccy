@@ -33,7 +33,7 @@ export class CurrencyListComponent implements OnInit {
   }
 
   getCorrencies() {
-    this.currencyList$ = timer(0, 1000 * 60).pipe(
+    this.currencyList$ = timer(0, 1000 * 60 * 5).pipe(
       switchMap(() => this.service.requestApi('get', environment.currecy_api_url)),
       map((res: any) => {
         const list: Currency[] = Object.values(res.data);
