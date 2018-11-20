@@ -5,7 +5,7 @@
   </div>
 <table mat-table [dataSource]="currencyList$ | async" >
 
-  <ng-container matColumnDef="id">
+  <ng-container matColumnDef="no">
     <th mat-header-cell *matHeaderCellDef> No </th>
     <td mat-cell *matCellDef="let i=index"> {{i+1}} </td>
   </ng-container>
